@@ -1,6 +1,7 @@
 @Repository
 class JdbcReadingListRepository implements ReadingListRepository{
 
+    //CLI知道大多数常用的类所在的包，当编译失败时会自动触发下载这些包，并把依赖加入classpath中
     @Autowired
     JdbcTemplate jdbcTemplate
 
